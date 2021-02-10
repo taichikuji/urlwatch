@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  urlwatch:
+    volumes:
+      - ./data:/root/.urlwatch
+    restart: unless-stopped
+    container_name: urlwatch_taichi
+    build: ./
