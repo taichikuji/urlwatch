@@ -1,4 +1,4 @@
-FROM python:3.8.5-slim
+FROM python:3.9.1-slim
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN apt-get update -y && apt-get -y install cron wdiff --no-install-recommends \
